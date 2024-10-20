@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сравнение автомобилей</title>
+    <style>
+        body {
+            background-image: url(carback.png);
+            margin: 50px 200px;
+            position: relative; 
+            font-family: Arial, sans-serif;
+            color: #333;
+            background-color: #fff;
+        }
+        body::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(255, 255, 255, 0.9);
+            z-index: 1;
+        }
+        table {
+            position: relative;
+            border-collapse: collapse; 
+            background-color: rgba(240, 248, 255, 0.9); 
+            width: 1000px;
+            z-index: 2; 
+            border: 1px solid rgb(0, 0, 0); 
+            border-radius: 8px; 
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+        }
+        th, td {
+            border: 1px solid rgb(0, 0, 0);
+            padding: 12px; 
+            text-align: left; 
+            background-color: rgba(255, 255, 255, 0.8);
+        }
+        tr:hover {
+            background-color: rgba(0, 0, 0, 0.1);
+        }
+        caption {
+            text-align: center; 
+            font-size: 24px; 
+            font-weight: bold; 
+            margin: 10px 0;
+            text-decoration: underline; 
+            color: #333; 
+            background-color: rgba(240, 248, 255, 0.8);
+            padding: 8px; 
+            border-radius: 5px; 
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+        }
+        section {
+            margin-bottom: 40px;
+            position: relative;
+            z-index: 2;
+        }
+        figure {
+            margin: 0;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        nav {
+            position: relative;
+            z-index: 2;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin: 5px 0;
+        }
+        a {
+            text-decoration: none;
+            color: #0056b3;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        progress {
+            width: 100%;
+            height: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <h2>Навигация</h2>
+    <ul>
+        <li><a href="#toyota">Toyota</a></li>
+        <li><a href="#volkswagen">Volkswagen</a></li>
+        <li><a href="#ford">Ford</a></li>
+    </ul>
+</nav>
+
+<section id="toyota">
+    <h2>Toyota Camry</h2>
+    <figure>
+        <img src="toyota_camry.jpg" alt="Toyota Camry">
+        <figcaption>Toyota Camry - стильный и надежный седан.</figcaption>
+    </figure>
+    
+    <table>
+        <caption>Характеристики Toyota Camry</caption>
+        <tr>
+            <th>Характеристика</th>
+            <th>Значение</th>
+        </tr>
+        <tr>
+            <td>Тип двигателя</td>
+            <td>Бензиновый</td>
+        </tr>
+        <tr>
+            <td>Расход топлива</td>
+            <td>8 л/100 км</td>
+        </tr>
+        <tr>
+            <td>Тип трансмиссии</td>
+            <td>Автоматическая</td>
+        </tr>
+        <tr>
+            <td>Количество передач</td>
+            <td>8</td>
+        </tr>
+        <tr>
+            <td>Габариты (Д x Ш x В)</td>
+            <td>4925 x 1840 x 1450 мм</td>
+        </tr>
+        <tr>
+            <td>Объем багажника</td>
+            <td>493 л</td>
+        </tr>
+        <tr>
+            <td>Системы безопасности</td>
+            <td>ABS, ESP, подушки безопасности</td>
+        </tr>
+        <tr>
+            <td>Рейтинг краш-тестов</td>
+            <td>5 звезд Euro NCAP <progress value="5" max="5"></progress></td>
+        </tr>
+        <tr>
+            <td>Разгон до 100 км/ч</td>
+            <td>8.6 сек</td>
+        </tr>
+        <tr>
+            <td>Максимальная скорость</td>
+            <td>210 км/ч</td>
+        </tr>
+        <tr>
+            <td>Начальная цена</td>
+            <td>2,500,000 руб.</td>
+        </tr>
+        <tr>
+            <td>Wi-Fi и Bluetooth</td>
+            <td>Есть</td>
+        </tr>
+        <tr>
+            <td>Тормозная система</td>
+            <td>Дисковые тормоза</td>
+        </tr>
+        <tr>
+            <td>Системы предотвращения столкновений</td>
+            <td>Есть</td>
+        </tr>
+        <tr>
+            <td>Гарантийный срок</td>
+            <td>3 года</td>
+        </tr>
+        <tr>
+            <td>Дата выпуска</td>
+            <td><time datetime="2023-01-01">1 января 2023</time></td>
+        </tr>
+    </table>
+
+    <aside>
+        <h3>Интересные факты о Toyota Camry</h3>
+        <p>Camry является одним из самых продаваемых седанов в мире.</p>
+        <blockquote>
+            «Toyota Camry - это сочетание стиля и надежности.»
+        </blockquote>
+    </aside>
+</section>
+
+<section id="volkswagen">
+    <h2>Volkswagen Passat</h2>
+    <figure>
+        <img src="volkswagen_passat.jpg" alt="Volkswagen Passat">
+        <figcaption>Volkswagen Passat - идеальный семейный автомобиль.</figcaption>
+    </figure>
+    
+    <table>
+        <caption>Характеристики Volkswagen Passat</caption>
+        <tr>
+            <th>Характеристика</th>
+            <th>Значение</th>
+        </tr>
+        <tr>
+            <td>Тип двигателя</td>
+            <td>Дизельный</td>
+        </tr>
+        <tr>
+            <td>Расход топлива</td>
+            <td>5.5 л/100 км</td>
+        </tr>
+        <tr>
+            <td>Тип трансмиссии</td>
+            <td>Механическая</td>
+        </tr>
+        <tr>
+            <td>Количество передач</td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <td>Габариты (Д x Ш x В)</td>
+            <td>4775 x 1832 x 1461 мм</td>
+        </tr>
+        <tr>
+            <td>Объем багажника</td>
+            <td>586 л</td>
+        </tr>
+        <tr>
+            <td>Системы безопасности</td>
+            <td>ABS, ESP, подушки безопасности</td>
+        </tr>
+        <tr>
+            <td>Рейтинг краш-тестов</td>
+            <td>5 звезд Euro NCAP <progress value="5" max="5"></progress></td>
+        </tr>
+        <tr>
+            <td>Разгон до 100 км/ч</td>
+            <td>9.5 сек</td>
+        </tr>
+        <tr>
+            <td>Максимальная скорость</td>
+            <td>220 км/ч</td>
+        </tr>
+        <tr>
+            <td>Начальная цена</td>
+            <td>2,300,000 руб.</td>
+        </tr>
+        <tr>
+            <td>Wi-Fi и Bluetooth</td>
+            <td>Есть</td>
+        </tr>
+        <tr>
+            <td>Тормозная система</td>
+            <td>Дисковые тормоза</td>
+        </tr>
+        <tr>
+            <td>Системы предотвращения столкновений</td>
+            <td>Есть</td>
+        </tr>
+        <tr>
+            <td>Гарантийный срок</td>
+            <td>2 года</td>
+        </tr>
+        <tr>
+            <td>Дата выпуска</td>
+            <td><time datetime="2023-01-01">1 января 2023</time></td>
+        </tr>
+    </table>
+
+    <aside>
+        <h3>Интересные факты о Volkswagen Passat</h3>
+        <p>Passat был представлен в 1973 году и с тех пор стал одним из самых популярных седанов в Европе.</p>
+        <blockquote>
+            «Volkswagen Passat - это идеальный выбор для семейных поездок.»
+        </blockquote>
+    </aside>
+</section>
+
+<section id="ford">
+    <h2>Ford Focus</h2>
+    <figure>
+        <img src="ford_focus.jpg" alt="Ford Focus">
+        <figcaption>Ford Focus - динамичный и экономичный хэтчбек.</figcaption>
+    </figure>
+    
+    <table>
+        <caption>Характеристики Ford Focus</caption>
+        <tr>
+            <th>Характеристика</th>
+            <th>Значение</th>
+        </tr>
+        <tr>
+            <td>Тип двигателя</td>
+            <td>Бензиновый</td>
+        </tr>
+        <tr>
+            <td>Расход топлива</td>
+            <td>6.2 л/100 км</td>
+        </tr>
+        <tr>
+            <td>Тип трансмиссии</td>
+            <td>Автоматическая</td>
+        </tr>
+        <tr>
+            <td>Количество передач</td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <td>Габариты (Д x Ш x В)</td>
+            <td>4370 x 1825 x 1470 мм</td>
+        </tr>
+        <tr>
+            <td>Объем багажника</td>
+            <td>375 л</td>
+        </tr>
+        <tr>
+            <td>Системы безопасности</td>
+            <td>ABS, ESP, подушки безопасности</td>
+        </tr>
+        <tr>
+            <td>Рейтинг краш-тестов</td>
+            <td>5 звезд Euro NCAP <progress value="5" max="5"></progress></td>
+        </tr>
+        <tr>
+            <td>Разгон до 100 км/ч</td>
+            <td>8.3 сек</td>
+        </tr>
+        <tr>
+            <td>Максимальная скорость</td>
+            <td>210 км/ч</td>
+        </tr>
+        <tr>
+            <td>Начальная цена</td>
+            <td>1,800,000 руб.</td>
+        </tr>
+        <tr>
+            <td>Wi-Fi и Bluetooth</td>
+            <td>Есть</td>
+        </tr>
+        <tr>
+            <td>Тормозная система</td>
+            <td>Дисковые тормоза</td>
+        </tr>
+        <tr>
+            <td>Системы предотвращения столкновений</td>
+            <td>Есть</td>
+        </tr>
+        <tr>
+            <td>Гарантийный срок</td>
+            <td>3 года</td>
+        </tr>
+        <tr>
+            <td>Дата выпуска</td>
+            <td><time datetime="2023-01-01">1 января 2023</time></td>
+        </tr>
+    </table>
+
+    <aside>
+        <h3>Интересные факты о Ford Focus</h3>
+        <p>Focus был впервые представлен в 1998 году и стал одним из самых продаваемых автомобилей в мире.</p>
+        <blockquote>
+            «Ford Focus - это отличный выбор для городских условий.»
+        </blockquote>
+    </aside>
+</section>
+
+</body>
+</html>

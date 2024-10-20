@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cars</title>
+</head>
+<style>
+    body {
+    background-image: url(carback.png);
+    margin: 50px 200px;
+    position: relative; 
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.5); 
+    z-index: 1;
+}
+
+table {
+    position: relative;
+    border-collapse: collapse; 
+    background-color: rgba(240, 248, 255, 0.9); 
+    width: 1000px;
+    z-index: 2; 
+    border: 1px solid rgb(0, 0, 0); 
+    border-radius: 8px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+}
+
+th, td {
+    border: 1px solid rgb(0, 0, 0);
+    padding: 12px; 
+    text-align: left; 
+}
+
+tr:hover {
+    background-color: rgba(0, 0, 0, 0.05); 
+}
+caption{
+    text-align: center; 
+    font-size: 24px; 
+    font-weight: bold; 
+    margin: 10px 0;
+    text-decoration: underline; 
+    color: #333; 
+    background-color: rgba(240, 248, 255, 0.8);
+    padding: 8px; 
+    border-radius: 5px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+}
+</style>
+
+<body>
+    <table>
+        <caption>Автомобили</caption>
+<tr>
+<th>Показатель</th>
+ <th>Lamborghini</th>
+<th>Voyah</th>
+<th>Jaguar</th>
+</tr>
+<tr>
+    <th>1. Самая дорогая модель</th>
+    <td>
+        Lamborghini Sián
+        <details>
+            <summary>Подробнее</summary>
+            <p>Модель Sián использует гибридную технологию, сочетая мощный V12 с электродвигателем.</p>
+        </details>
+    </td>
+    <td>
+        Voyah Dream
+        <details>
+            <summary>Подробнее</summary>
+            <p>Электрический седан с высокой производительностью и современными технологиями.</p>
+        </details>
+    </td>
+    <td>
+        Jaguar XJ SV
+        <details>
+            <summary>Подробнее</summary>
+            <p>Люксовый седан с ручной сборкой и индивидуальными опциями.</p>
+        </details>
+    </td>
+</tr>
+<tr>
+    <th>2.	Самая дешёвая модель. </th>
+    <td>Lamborghini Huracán</td>
+    <td>Voyah Free</td>
+    <td>Jaguar XE</td>
+</tr>
+<tr>
+    <th>3.	Двигатель</th>
+    <td>6.5L V12</td>
+    <td>2.0L Turbocharged I4</td>
+    <td>5.0L V8</td>
+</tr>
+<tr>
+    <th>4.	Расход топлива</th>
+    <td>12-15 л/100 км</td>
+    <td>6-8 л/100 км</td>
+    <td>10-12 л/100 км</td>
+</tr>
+<tr>
+    <th><mark>5. Скорость</mark></th>
+    <td>0-100 км/ч за 2.8 сек</td>
+    <td>0-100 км/ч за 4.5 сек</td>
+    <td>0-100 км/ч за 5.5 сек</td>
+</tr>
+<tr>
+    <th>6.	Наличие экологических сертификатов</th>
+    <td>Euro 6, LEV III</td>
+    <td>Euro 6, China 6</td>
+    <td>Euro 6</td>
+</tr>
+<tr>
+    <th>7.	Гарантийный срок</th>
+    <td>3 года</td>
+    <td>5 лет</td>
+    <td>3 года</td>
+</tr>
+<tr>
+    <th>8.	Максимальная скорость</th>
+    <td>350 км/ч</td>
+    <td>200 км/ч</td>
+    <td>250 км/ч</td>
+</tr>
+<tr>
+    <th>9.	Тип (механическая, автоматическая, вариатор)</th>
+    <td>Автоматическая</td>
+    <td>Автоматическая</td>
+    <td>Автоматическая</td>
+</tr>
+<tr>
+    <th>10.	Количество передач</th>
+    <td>7</td>
+    <td>1</td>
+    <td>8</td>
+</tr>
+    </table>
+</body>
+</html>
